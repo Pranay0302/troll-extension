@@ -1,0 +1,21 @@
+{
+    "name": "troll-extension",
+    "version": "1.0.0",
+    "description": "replacing everything with lol",
+    "manifest_version": 2,
+    "short_name": "lol",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["trial.js"]
+    }],
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+        "48": "icons/trollface.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "clicky"
+    }
+}
